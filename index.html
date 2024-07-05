@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nile - Shopping Cart</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ac60b3c92d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="images/logo/nile.png" alt="Nile Logo" id="logoImg">
+            </div>
+            <div id="icons">
+                <a href="#" class="icon"><i class="fa-solid fa-user"></i> <p id="signIn">Sign In</p></a>
+                <a href="#" class="icon"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </header>
+        <section id="cartArea">
+            <div id="cart">
+                <div class="product">
+                    <div class="productImg"><img src="images/products/iphone-15-pro.jpg" alt="Iphone 15 Pro" class="productIcon"></div>
+                    <div class="productDetails">
+                        <p class="productName">
+                            iPhone 15 Pro Max 512GB Natural Titanium
+                        </p>
+                    </div>
+                    <div class="productQuantity">
+                         <button id="minusBtn1" class="quantBtn"><i class="fa-solid fa-minus fa-lg"></i></button>
+                         <input id="proQuant1" type="text" class="quantity" value="1">
+                         <button id="plusBtn1" class="quantBtn"><i class="fa-solid fa-plus fa-beat fa-lg"></i></button>
+                    </div>
+                    <div class="productPrice">
+                        <p>$ <span id="price1">1399.00</span></p>
+                    </div>
+                    <button class="deleteBtn"><i class="fa-solid fa-xmark fa-xl" style="color: #ff0000;"></i></button>
+                </div>
+                <div class="product">
+                    <div class="productImg"><img src="images/products/iphone-15-pro-case.jpg" alt="Iphone 15 Pro Case" class="productIcon"></div>
+                    <div class="productDetails">
+                        <p class="productName">
+                            iPhone 15 Pro Max FineWoven Case Pacific Blue
+                        </p>
+                    </div>
+                    <div class="productQuantity">
+                        <button id="minusBtn2" class="quantBtn"><i class="fa-solid fa-minus fa-lg"></i></button>
+                         <input id="proQuant2" type="text" class="quantity" value="1">
+                         <button id="plusBtn2" class="quantBtn"><i class="fa-solid fa-plus fa-beat fa-lg"></i></button>
+                    </div>
+                    <div class="productPrice">
+                        <p>$ <span id="price2">59.00</span></p>
+                    </div>
+                    <button class="deleteBtn"><i class="fa-solid fa-xmark fa-xl" style="color: #ff0000;"></i></button>
+                </div>
+                <div class="priceArea">
+                    <div class="priceCal">
+                        <p>Subtotal:</p> <p>$ <span id="subtotalPrice">1458.00</span></p>
+                    </div>
+                    <div class="priceCal">
+                        <p>Tax (7.5%):</p> <p>$ <span id="taxAmount">0.00</span></p>
+                    </div>
+                    <div class="priceCal">
+                        <p class="total">Total:</p> <p class="total">$ <span id="totalPrice">1458.00</span></p>
+                    </div>
+                </div>
+                <div id="checkOut">
+                    <button class="checkoutBtn">Check Out</button>
+                </div>  
+            </div>
+            
+        </section>
+        <footer>
+
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
