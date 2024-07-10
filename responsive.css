@@ -1,11 +1,13 @@
 @media screen and (max-width: 480px) {
 
-    body{
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+    .icon{
+        padding: 5px;
     }
-    
+
+    #signIn{
+        font-size: 14px;
+    }
+
     #cart{
         width: 94%;
         padding: 15px;
@@ -42,6 +44,10 @@
 
     footer{
         font-size: 12px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
     
 
@@ -66,6 +72,13 @@
     .priceArea{
         margin: 0 0 20px 0;
         padding: 10px;
+    }
+
+    footer{
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
 
 }
